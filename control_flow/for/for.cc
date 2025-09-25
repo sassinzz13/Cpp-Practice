@@ -1,7 +1,7 @@
 #include <iostream>
 
 // rewriting the while loop logic with a for
-int forLoopExampleInContextOfTheWhileLoopEarlier(){
+int forLoopExample(){
     int sum = 0;
     for(int val = 1; val <= 10; ++val){
         sum += val; //sum = sum + val
@@ -10,8 +10,29 @@ int forLoopExampleInContextOfTheWhileLoopEarlier(){
     return 0;
 }
 
+int forLoopToSumNumbers(){
+   int sumThisNumber = 10;
+   int reachThisNumber = 100;
+   std::cout << sumThisNumber << std::endl;
+   for(sumThisNumber; sumThisNumber <= reachThisNumber; sumThisNumber++){
+    sumThisNumber+=reachThisNumber;
+   }
+   return 0;
+}
+
+int forLoopThatTakesTwoIntegerAndPrintsTheirRange(){
+    int n1 = 0, n2 = 0;
+    std::cin >> n1 >> n2;
+    for(n1; n1 <= n2; n1++){
+        std::cout << n1 << std::endl;
+    }
+    return 0;
+}
+
 
 
 int main(){
-    forLoopExampleInContextOfTheWhileLoopEarlier();
+    // forLoopExample();
+    // forLoopToSumNumbers();
+    // forLoopThatTakesTwoIntegerAndPrintsTheirRange();   
 }
